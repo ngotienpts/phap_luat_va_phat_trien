@@ -1,0 +1,163 @@
+.category {
+    &-container {
+        border-bottom: 1px solid #c4c4c4;
+    }
+    
+}
+
+.cate-primary {
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 24px;
+    }
+
+    &__left {
+        padding-right: 24px;
+        border-right: 1px solid #e0e0e0;
+        .top {
+            .article-large {
+              grid-column: 1/3;  
+    
+            }
+            .article-small {
+                background-color: #F5EFEB;
+            }
+        }
+    }
+
+    &__right {
+        
+    }
+}
+
+.cate-secondary {
+    &__container {
+        display: flex;
+        gap: 24px;
+    }
+    &__left {
+        width: calc(100% - 324px);
+        padding-right: 24px;
+        border-right: 1px solid #e0e0e0;
+
+        .article {
+            &:first-child {
+                padding-top: 0;
+            }
+        }
+    }
+    &__right {
+        flex-shrink: 0;
+        width: 300px;
+    }
+}
+
+.pagination {
+    &-item {
+        + .pagination-item {
+            margin-left: 8px;
+        }
+        border-radius: 3px;
+        border: 1px solid #e2e2e2;
+        background-color: #F5EFEA;
+        transition: all 0.2s;
+        &:hover {
+            background-color: #e62c4a;
+            color: #fff;
+
+            .pagination-link {
+                color: #fff;
+            }
+        }
+        &.active {
+            background-color: #e62c4a;
+            color: #fff;
+        }
+    }
+    &-link {
+        padding: 10px 15px;
+        display: inline-block;
+    }
+}
+
+.newspaper {
+    position: relative;
+
+    &-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .breadcrumb-item {
+        font-size: 24px;
+        position: relative;
+        flex-shrink: 0;
+        &::before {
+            content: "\276F";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -16px;
+            color: #c4c4c4;
+            font-size: 15px;
+        }
+
+        &:first-child {
+            font-weight: bold;
+        }
+    }
+
+    &-select {
+        .title {
+            color: #4f4f4f;
+        }
+
+        &-item {
+            select {
+                background-color: #fff;
+                border-radius: 10px;
+                border: 1px solid #e5e5e5;
+                padding: 10px;
+                min-width: 200px;
+                height: 40px;
+                color: #737373;
+                font-size: 14px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                background-image: url('../images/svg/iOS_Chevron_Right.svg');
+                background-repeat: no-repeat;
+                background-position-x: 96%;
+                background-position-y: 10px;
+                padding-right: 30px !important;
+                font-family: 'Arial';
+                
+            }
+
+            &.primary {
+                select {
+                    color: #013D79;
+                }
+            }
+        }
+    }
+
+    &-title {
+        max-width: 800px;
+    }
+    &-cate-primary {
+        .article {
+            &:first-child {
+                padding-top: 0;
+            }
+        }
+    }
+}
