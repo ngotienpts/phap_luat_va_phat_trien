@@ -113,6 +113,15 @@
         padding-left: 80px;
     }
 
+    .newspaper-detail-primary {
+        .download-primary {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 0;
+            
+        }
+    }
+
     // --------------------------------------------------------------------footer
 }
 
@@ -258,6 +267,14 @@
             width: 100%;
         }
    }
+   .newspaper {
+        &-cate-primary {
+            .inner {
+                border: 0;
+                padding: 0;
+            }
+        }
+   }
  
     // --------------------------------------------------------------------detail
    
@@ -287,6 +304,28 @@
         max-width: 100%;
     }
 
+    .newspaper-detail-primary {
+        padding: 0;
+        .detail-content {
+            max-width: 100%;
+            margin-left: 0;
+            padding: 20px;
+        }
+
+        .download-secondary {
+            display: flex;
+            justify-content: center;
+            transform: translateY(0);
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        
+    }
+    .newspaper-detail-secondary {
+        max-width: 100%;
+        padding: 0;
+    }
     // --------------------------------------------------------------------footer
     .footer {
         &-top {
@@ -848,6 +887,20 @@
         .time-public {
             display: none;
         }
+
+
+    }
+
+    .newspaper-title--2 {
+        border-bottom: 0;
+    }
+    .newspaper-detail-primary {
+        .detail-content {
+            border: 0;
+            padding: 0;
+        }
+
+        
     }
 
     

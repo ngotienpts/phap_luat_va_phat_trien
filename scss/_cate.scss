@@ -154,6 +154,10 @@
         max-width: 800px;
     }
     &-cate-primary {
+        .inner {
+            border: 1px solid #F8F4F0;
+            padding: 20px 50px;
+        }
         .article {
             &:first-child {
                 padding-top: 0;
