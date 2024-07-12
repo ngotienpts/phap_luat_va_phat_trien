@@ -2407,13 +2407,13 @@ img {
   right: -12px;
 }
 
-.newspaper {
+.box-newspaper {
   position: relative;
   overflow: hidden;
   border: 1px solid #e5e5e5;
   height: 600px;
 }
-.newspaper::before {
+.box-newspaper::before {
   content: "";
   background-image: linear-gradient(0deg, #AEE0F1 55.75%, rgba(255, 255, 255, 0) 86.17%);
   position: absolute;
@@ -2423,7 +2423,7 @@ img {
   bottom: 0;
   z-index: 2;
 }
-.newspaper-content {
+.box-newspaper .newspaper-content {
   position: absolute;
   bottom: 10%;
   left: 0;
@@ -2432,40 +2432,40 @@ img {
   padding: 20px;
   z-index: 10;
 }
-.newspaper-heading {
+.box-newspaper .newspaper-heading {
   color: #EB242C;
 }
-.newspaper-logo-nn img {
+.box-newspaper .newspaper-logo-nn img {
   margin: auto;
   width: auto;
   height: 100px;
 }
-.newspaper-bg {
+.box-newspaper .newspaper-bg {
   width: 100%;
   height: auto;
 }
-.newspaper .doted {
+.box-newspaper .doted {
   margin: 3rem auto;
   max-width: 200px;
   border-bottom: 2px dashed #152764;
 }
-.newspaper .hotline-icon {
+.box-newspaper .hotline-icon {
   width: 2rem;
   height: 2rem;
   background-color: #fff;
   border-radius: 50%;
 }
-.newspaper-register-email {
+.box-newspaper .newspaper-register-email {
   max-width: 240px;
   margin: auto;
 }
-.newspaper .register-email__input {
+.box-newspaper .register-email__input {
   background-color: #f7f7f7;
 }
-.newspaper .register-email__group {
+.box-newspaper .register-email__group {
   position: relative;
 }
-.newspaper .register-email__icon {
+.box-newspaper .register-email__icon {
   position: absolute;
   left: 0.5rem;
   top: 50%;
@@ -2474,7 +2474,7 @@ img {
   align-items: center;
   justify-content: center;
 }
-.newspaper .register-email__input {
+.box-newspaper .register-email__input {
   border: 1px solid #e5e5e5;
   height: 1.875rem;
   border-radius: 999px;
@@ -2482,10 +2482,10 @@ img {
   padding: 8px 80px 8px 28px;
   font-size: 0.875rem;
 }
-.newspaper .register-email__input:focus {
+.box-newspaper .register-email__input:focus {
   border-color: #152764;
 }
-.newspaper .register-email__btn {
+.box-newspaper .register-email__btn {
   background-color: #eb242c;
   color: #fff;
   border-radius: 999px;

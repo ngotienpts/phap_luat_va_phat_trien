@@ -483,7 +483,7 @@
     }
 }
 
-.newspaper {
+.box-newspaper {
     position: relative;
     overflow: hidden;
     border: 1px solid #e5e5e5;
@@ -503,7 +503,7 @@
         bottom: 0;
         z-index: 2;
     }
-    &-content {
+    .newspaper-content {
         position: absolute;
         bottom: 10%;
         left: 0;
@@ -513,11 +513,11 @@
         z-index: 10;
     }
 
-    &-heading {
+    .newspaper-heading {
         color: #EB242C;
     }
 
-    &-logo-nn {
+    .newspaper-logo-nn {
         img {
             margin: auto;
             width: auto;
@@ -525,7 +525,7 @@
         }
     }
 
-    &-bg {
+    .newspaper-bg {
         width: 100%;
         height: auto;
     }
@@ -543,7 +543,7 @@
         border-radius: 50%;
     }
 
-    &-register-email {
+    .newspaper-register-email {
         max-width: 240px;
         margin: auto;
     }
