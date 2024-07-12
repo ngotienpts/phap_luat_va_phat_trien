@@ -152,11 +152,24 @@
         border-radius: 999px;
     }
 }
+.header {
+    .logo {
+        padding: 15px;
+        background-color: #DAECFF;
+
+        img {
+            width: auto;
+            height: 99px;
+        }
+    }
+     
+}
 .logo {
     position: absolute;
     top: -5px;
     left: 0;
     z-index: 30;
+   
 
     img {
         width: auto;
