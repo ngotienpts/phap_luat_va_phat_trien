@@ -1644,7 +1644,7 @@ img {
 
 .header .logo {
   padding: 15px;
-  background-color: #DAECFF;
+  background-image: linear-gradient(180deg, #DAECFF, #fff);
 }
 .header .logo img {
   width: auto;
