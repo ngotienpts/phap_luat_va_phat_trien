@@ -48,6 +48,7 @@
     }
 }
 .social {
+    position: relative;
     gap: 6px;
     &-link {
         width: 30px;
@@ -66,6 +67,50 @@
         img {
             height: 14px;
             width: auto;
+        }
+    }
+
+    &-more {
+
+        &__icon {
+            flex-shrink: 0;
+            margin-left: 6px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                background-color: rgba($color: #fff, $alpha: 0.1);
+            }
+
+            img {
+                height: 4px;
+                width: auto;
+            }
+        }
+        &__list {
+            position: absolute;
+            display: none;
+            top: 53px;
+            right: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            padding: 10px 15px;
+            background-color: #013d79;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: end;
+            gap: 6px;
+
+            &.active {
+                display: flex;
+            }
         }
     }
 }
@@ -468,8 +513,8 @@
 .pl-180 {
     padding-left: 180px;
 }
-.pl-270 {
-    padding-left: 270px;
+.pl-230 {
+    padding-left: 230px;
 }
 
 .search-mb__icon {

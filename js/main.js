@@ -21,7 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const navbarMoreIcon = document.querySelector('.js__navbarMoreIcon')
     const navbarMoreContent = document.querySelector('.js__navbarMoreContent')
 
-
+    // more social
+    const moreSocial = document.querySelector('.js__socialMore')
     // search mb
     const searchMbs = document.querySelectorAll(".js__searchMb");
     // navbar mb
@@ -37,6 +38,18 @@ document.addEventListener("DOMContentLoaded", function () {
         backTop.onclick = function () {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
+        };
+        
+    }
+
+    // xử lý sự kiện show more social
+    function handleMoreSocial() {
+        if (!moreSocial) return;
+        var moreIcon = document.querySelector(".js__socialMoreIcon");
+        var moreList = document.querySelector(".js__socialMoreList");
+
+        moreIcon.onclick = function () {
+            moreList.classList.toggle("active");
         };
         
     }
@@ -332,6 +345,7 @@ function handleBackTopVisibility() {
         handleShowDropdownSubMenu();
         handleMoreMenu();
         handleShowSearchMb();
+        handleMoreSocial();
         handleNavbarMb();
         handleVideo169();
         initFancybox();

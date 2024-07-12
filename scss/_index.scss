@@ -482,3 +482,109 @@
         }
     }
 }
+
+.newspaper {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    height: 600px;
+    &::before {
+        content: "";
+        background-image: linear-gradient(
+            0deg,
+            #AEE0F1 55.75%,
+            rgba(255, 255, 255, 0) 86.17%
+        );
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+    &-content {
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        z-index: 10;
+    }
+
+    &-heading {
+        color: #EB242C;
+    }
+
+    &-logo-nn {
+        img {
+            margin: auto;
+            width: auto;
+            height: 100px;
+        }
+    }
+
+    &-bg {
+        width: 100%;
+        height: auto;
+    }
+
+    .doted {
+        margin: 3rem auto;
+        max-width: 200px;
+        border-bottom: 2px dashed #152764;
+    }
+
+    .hotline-icon {
+        width: 2rem;
+        height: 2rem;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+    &-register-email {
+        max-width: 240px;
+        margin: auto;
+    }
+    .register-email__input {
+        background-color: #f7f7f7;
+    }
+    .register-email__group {
+        position: relative;
+    }
+    .register-email__icon {
+        position: absolute;
+        left: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .register-email__input {
+        border: 1px solid #e5e5e5;
+        height: 1.875rem;
+        border-radius: 999px;
+        width: 100%;
+        padding: 8px 80px 8px 28px;
+        font-size: 0.875rem;
+
+        &:focus {
+            border-color: #152764;
+        }
+    }
+    .register-email__btn {
+        background-color: #eb242c;
+        color: #fff;
+        border-radius: 999px;
+        padding: 0.5rem 1rem;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 0.75rem;
+        cursor: pointer;
+    }
+}
+

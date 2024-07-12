@@ -1548,6 +1548,7 @@ img {
 }
 
 .social {
+  position: relative;
   gap: 6px;
 }
 .social-link {
@@ -1566,6 +1567,43 @@ img {
 .social-link img {
   height: 14px;
   width: auto;
+}
+.social-more__icon {
+  flex-shrink: 0;
+  margin-left: 6px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-more__icon:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-more__icon img {
+  height: 4px;
+  width: auto;
+}
+.social-more__list {
+  position: absolute;
+  display: none;
+  top: 53px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 10px 15px;
+  background-color: #013d79;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 6px;
+}
+.social-more__list.active {
+  display: flex;
 }
 
 .language {
@@ -1928,8 +1966,8 @@ img {
   padding-left: 180px;
 }
 
-.pl-270 {
-  padding-left: 270px;
+.pl-230 {
+  padding-left: 230px;
 }
 
 .search-mb__icon {
@@ -2358,6 +2396,97 @@ img {
   background-color: #e0e0e0;
   top: 0;
   right: -12px;
+}
+
+.newspaper {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  height: 600px;
+}
+.newspaper::before {
+  content: "";
+  background-image: linear-gradient(0deg, #AEE0F1 55.75%, rgba(255, 255, 255, 0) 86.17%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.newspaper-content {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  z-index: 10;
+}
+.newspaper-heading {
+  color: #EB242C;
+}
+.newspaper-logo-nn img {
+  margin: auto;
+  width: auto;
+  height: 100px;
+}
+.newspaper-bg {
+  width: 100%;
+  height: auto;
+}
+.newspaper .doted {
+  margin: 3rem auto;
+  max-width: 200px;
+  border-bottom: 2px dashed #152764;
+}
+.newspaper .hotline-icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.newspaper-register-email {
+  max-width: 240px;
+  margin: auto;
+}
+.newspaper .register-email__input {
+  background-color: #f7f7f7;
+}
+.newspaper .register-email__group {
+  position: relative;
+}
+.newspaper .register-email__icon {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newspaper .register-email__input {
+  border: 1px solid #e5e5e5;
+  height: 1.875rem;
+  border-radius: 999px;
+  width: 100%;
+  padding: 8px 80px 8px 28px;
+  font-size: 0.875rem;
+}
+.newspaper .register-email__input:focus {
+  border-color: #152764;
+}
+.newspaper .register-email__btn {
+  background-color: #eb242c;
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  cursor: pointer;
 }
 
 .category-container {
