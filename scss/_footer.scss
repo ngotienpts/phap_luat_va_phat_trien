@@ -24,18 +24,34 @@
     -o-border-radius: 50%;
 }
 .footer {
-
+    padding-top: 40px;
     &-container {
         position: relative;
 
-        .logo img {
+        .logo img,
+        .logo-footer img {
             width: auto;
             height: 80px;
+        }
+
+        .text-svg img {
+            width: 136px;
+            height: auto;
         }
 
     }
     &-top {
         justify-content: end;
+
+        .center {
+            position: absolute;
+            top: -20px;
+            left: 0;
+            z-index: 30;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
     }
     .hotline-img {
         width: 30px;
@@ -49,10 +65,9 @@
     }
 
     .navbar {
-        padding: 0;
+        padding: 0 0 20px;
 
         border-bottom-color: #737373;
-        padding-bottom: 12px;
 
         .navbar-wrapper {
             justify-content: end;

@@ -2956,15 +2956,32 @@ img {
   -o-border-radius: 50%;
 }
 
+.footer {
+  padding-top: 40px;
+}
 .footer-container {
   position: relative;
 }
-.footer-container .logo img {
+.footer-container .logo img,
+.footer-container .logo-footer img {
   width: auto;
   height: 80px;
 }
+.footer-container .text-svg img {
+  width: 136px;
+  height: auto;
+}
 .footer-top {
   justify-content: end;
+}
+.footer-top .center {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .footer .hotline-img {
   width: 30px;
@@ -2977,9 +2994,8 @@ img {
   justify-content: center;
 }
 .footer .navbar {
-  padding: 0;
+  padding: 0 0 20px;
   border-bottom-color: #737373;
-  padding-bottom: 12px;
 }
 .footer .navbar .navbar-wrapper {
   justify-content: end;
@@ -3316,6 +3332,10 @@ img {
     padding: 0;
   }
 
+  .footer-container .text-svg img {
+    width: 150px;
+    height: auto;
+  }
   .footer-top {
     flex-direction: column;
   }
