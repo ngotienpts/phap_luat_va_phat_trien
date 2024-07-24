@@ -80,7 +80,6 @@
             left: 20px;
             z-index: 30;
         }
-        
     }
     .header {
         .breadcrumb-primary__container {
@@ -104,9 +103,8 @@
     // --------------------------------------------------------------------cate
     .newspaper {
         .breadcrumb-newspaper {
-             flex-wrap: nowrap;
-             overflow: auto;
-             
+            flex-wrap: nowrap;
+            overflow: auto;
         }
     }
     // --------------------------------------------------------------------detail
@@ -122,15 +120,14 @@
             display: flex;
             justify-content: center;
             margin: 20px 0 0;
-            
         }
     }
 
     // --------------------------------------------------------------------footer
 }
 
-// max width 992px 
-@media (max-width:992px){
+// max width 992px
+@media (max-width: 992px) {
     .navbar-wrapper {
         font-size: 10px;
         .navbar-item a {
@@ -162,7 +159,7 @@
     }
     .header-mb-top {
         padding-right: 0;
-         .logo {
+        .logo {
             left: 15px;
         }
     }
@@ -223,7 +220,7 @@
                 width: 100%;
                 margin-top: 20px;
                 display: grid;
-                grid-template-columns: repeat(4,1fr);
+                grid-template-columns: repeat(4, 1fr);
                 grid-gap: 20px;
 
                 .article {
@@ -247,22 +244,21 @@
             }
         }
     }
-  
 
     // --------------------------------------------------------------------cate
-   .cate-primary {
+    .cate-primary {
         &__container {
-            display: block;   
+            display: block;
         }
 
         &__left {
             padding-right: 0;
             border-right: 0;
         }
-   }
-   .cate-secondary {
+    }
+    .cate-secondary {
         &__container {
-            display: block;   
+            display: block;
         }
 
         &__left {
@@ -270,18 +266,18 @@
             border-right: 0;
             width: 100%;
         }
-   }
-   .newspaper {
+    }
+    .newspaper {
         &-cate-primary {
             .inner {
                 border: 0;
                 padding: 0;
             }
         }
-   }
- 
+    }
+
     // --------------------------------------------------------------------detail
-   
+
     .detail-primary {
         &__container {
             display: block;
@@ -323,8 +319,6 @@
             margin-top: 0;
             margin-bottom: 20px;
         }
-
-        
     }
     .newspaper-detail-secondary {
         max-width: 100%;
@@ -337,7 +331,6 @@
                 width: 150px;
                 height: auto;
             }
-    
         }
         &-top {
             flex-direction: column;
@@ -346,7 +339,6 @@
                 top: auto;
                 left: auto;
             }
-
         }
         &-content {
             grid-template-columns: 1fr;
@@ -354,7 +346,7 @@
         }
 
         .social-link,
-        .hotline-img  {
+        .hotline-img {
             border: 1px solid #73737340;
         }
     }
@@ -444,8 +436,6 @@
                 .article-title {
                     font-size: 20px;
                 }
-
-                
             }
         }
 
@@ -466,7 +456,6 @@
                 display: block;
             }
         }
-
     }
 
     .main-secondary {
@@ -566,7 +555,6 @@
                         border-top: 1px solid #e0e0e0;
                         padding-top: 16px;
                     }
-
                 }
 
                 .article-title {
@@ -589,7 +577,7 @@
             }
         }
     }
-    
+
     .main-quaternary {
         &__top {
             display: block;
@@ -656,7 +644,6 @@
                     border-bottom: 0;
                     padding-bottom: 0;
                 }
-
             }
 
             .article-title {
@@ -691,7 +678,6 @@
 
     .cate-primary {
         margin-top: 0;
-
 
         &__container {
             padding-bottom: 0;
@@ -758,7 +744,7 @@
                     display: block;
                     padding: 16px 0;
                 }
-                .article-img  {
+                .article-img {
                     width: 100%;
                 }
 
@@ -769,7 +755,6 @@
                 .article-title {
                     font-size: 20px;
                 }
-
             }
         }
     }
@@ -871,6 +856,7 @@
     }
     .detail-tags {
         flex-wrap: nowrap;
+        white-space: nowrap;
     }
 
     .realted-news {
@@ -898,8 +884,6 @@
         .time-public {
             display: none;
         }
-
-
     }
 
     .newspaper-title--2 {
@@ -910,12 +894,7 @@
             border: 0;
             padding: 0;
         }
-
-        
     }
 
-    
     // --------------------------------------------------------------------footer
-
-    
 }
